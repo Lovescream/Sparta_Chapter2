@@ -1,0 +1,14 @@
+C:\Project\C#\Sparta_Chapter2\Test2\bin\Debug\net6.0\Test2.exe
+C:\Project\C#\Sparta_Chapter2\Test2\bin\Debug\net6.0\Test2.deps.json
+C:\Project\C#\Sparta_Chapter2\Test2\bin\Debug\net6.0\Test2.runtimeconfig.json
+C:\Project\C#\Sparta_Chapter2\Test2\bin\Debug\net6.0\Test2.dll
+C:\Project\C#\Sparta_Chapter2\Test2\bin\Debug\net6.0\Test2.pdb
+C:\Project\C#\Sparta_Chapter2\Test2\obj\Debug\net6.0\Test2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Project\C#\Sparta_Chapter2\Test2\obj\Debug\net6.0\Test2.AssemblyInfoInputs.cache
+C:\Project\C#\Sparta_Chapter2\Test2\obj\Debug\net6.0\Test2.AssemblyInfo.cs
+C:\Project\C#\Sparta_Chapter2\Test2\obj\Debug\net6.0\Test2.csproj.CoreCompileInputs.cache
+C:\Project\C#\Sparta_Chapter2\Test2\obj\Debug\net6.0\Test2.dll
+C:\Project\C#\Sparta_Chapter2\Test2\obj\Debug\net6.0\refint\Test2.dll
+C:\Project\C#\Sparta_Chapter2\Test2\obj\Debug\net6.0\Test2.pdb
+C:\Project\C#\Sparta_Chapter2\Test2\obj\Debug\net6.0\Test2.genruntimeconfig.cache
+C:\Project\C#\Sparta_Chapter2\Test2\obj\Debug\net6.0\ref\Test2.dll

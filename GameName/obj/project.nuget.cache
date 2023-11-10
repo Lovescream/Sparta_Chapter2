@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "xQyPO4WHzvvLNrUxt5bheziYX12ReOuhu93gnD5zy4PN+mGV0xkESMYYywRGVeVbU0J5aFpbvQOXf2g98j68Dw==",
+  "success": true,
+  "projectFilePath": "C:\\Project\\C#\\Sparta_Chapter2\\GameName\\GameName.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kyt2p\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,17 @@
+C:\Project\C#\Sparta_Chapter2\GameName\bin\Debug\net6.0\GameName.exe
+C:\Project\C#\Sparta_Chapter2\GameName\bin\Debug\net6.0\GameName.deps.json
+C:\Project\C#\Sparta_Chapter2\GameName\bin\Debug\net6.0\GameName.runtimeconfig.json
+C:\Project\C#\Sparta_Chapter2\GameName\bin\Debug\net6.0\GameName.dll
+C:\Project\C#\Sparta_Chapter2\GameName\bin\Debug\net6.0\GameName.pdb
+C:\Project\C#\Sparta_Chapter2\GameName\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Project\C#\Sparta_Chapter2\GameName\obj\Debug\net6.0\GameName.csproj.AssemblyReference.cache
+C:\Project\C#\Sparta_Chapter2\GameName\obj\Debug\net6.0\GameName.GeneratedMSBuildEditorConfig.editorconfig
+C:\Project\C#\Sparta_Chapter2\GameName\obj\Debug\net6.0\GameName.AssemblyInfoInputs.cache
+C:\Project\C#\Sparta_Chapter2\GameName\obj\Debug\net6.0\GameName.AssemblyInfo.cs
+C:\Project\C#\Sparta_Chapter2\GameName\obj\Debug\net6.0\GameName.csproj.CoreCompileInputs.cache
+C:\Project\C#\Sparta_Chapter2\GameName\obj\Debug\net6.0\GameName.csproj.CopyComplete
+C:\Project\C#\Sparta_Chapter2\GameName\obj\Debug\net6.0\GameName.dll
+C:\Project\C#\Sparta_Chapter2\GameName\obj\Debug\net6.0\refint\GameName.dll
+C:\Project\C#\Sparta_Chapter2\GameName\obj\Debug\net6.0\GameName.pdb
+C:\Project\C#\Sparta_Chapter2\GameName\obj\Debug\net6.0\GameName.genruntimeconfig.cache
+C:\Project\C#\Sparta_Chapter2\GameName\obj\Debug\net6.0\ref\GameName.dll

@@ -1,0 +1,14 @@
+C:\Project\C#\Sparta_Chapter2\Blackjack\bin\Debug\net6.0\Blackjack.exe
+C:\Project\C#\Sparta_Chapter2\Blackjack\bin\Debug\net6.0\Blackjack.deps.json
+C:\Project\C#\Sparta_Chapter2\Blackjack\bin\Debug\net6.0\Blackjack.runtimeconfig.json
+C:\Project\C#\Sparta_Chapter2\Blackjack\bin\Debug\net6.0\Blackjack.dll
+C:\Project\C#\Sparta_Chapter2\Blackjack\bin\Debug\net6.0\Blackjack.pdb
+C:\Project\C#\Sparta_Chapter2\Blackjack\obj\Debug\net6.0\Blackjack.GeneratedMSBuildEditorConfig.editorconfig
+C:\Project\C#\Sparta_Chapter2\Blackjack\obj\Debug\net6.0\Blackjack.AssemblyInfoInputs.cache
+C:\Project\C#\Sparta_Chapter2\Blackjack\obj\Debug\net6.0\Blackjack.AssemblyInfo.cs
+C:\Project\C#\Sparta_Chapter2\Blackjack\obj\Debug\net6.0\Blackjack.csproj.CoreCompileInputs.cache
+C:\Project\C#\Sparta_Chapter2\Blackjack\obj\Debug\net6.0\Blackjack.dll
+C:\Project\C#\Sparta_Chapter2\Blackjack\obj\Debug\net6.0\refint\Blackjack.dll
+C:\Project\C#\Sparta_Chapter2\Blackjack\obj\Debug\net6.0\Blackjack.pdb
+C:\Project\C#\Sparta_Chapter2\Blackjack\obj\Debug\net6.0\Blackjack.genruntimeconfig.cache
+C:\Project\C#\Sparta_Chapter2\Blackjack\obj\Debug\net6.0\ref\Blackjack.dll

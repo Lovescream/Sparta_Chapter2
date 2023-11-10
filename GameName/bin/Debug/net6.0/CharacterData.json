@@ -1,0 +1,25 @@
+{
+  "data": [
+    {
+      "name": "김전사",
+      "type": 0,
+      "hp": 100.0,
+      "damage": 10.0,
+      "defense": 10.0
+    },
+    {
+      "name": "박검사",
+      "type": 1,
+      "hp": 80.0,
+      "damage": 15.0,
+      "defense": 8.0
+    },
+    {
+      "name": "황건적",
+      "type": 2,
+      "hp": 75.0,
+      "damage": 18.0,
+      "defense": 5.0
+    }
+  ]
+}
