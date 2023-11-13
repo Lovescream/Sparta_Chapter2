@@ -41,8 +41,15 @@ namespace GameName {
             Renderer.Print(4, "장착하거나 장착해제할 아이템을 선택하세요.");
             Renderer.Print(5, "인벤토리로 돌아가려면 0을 입력해주세요.");
 
-            Renderer.DrawInventory(Managers.Game.CurrentCharacter.Inventory, 7);
-
+            //Renderer.DrawInventory(Managers.Game.CurrentCharacter.Inventory, 7);
+            List<ItemTableFormatter> formatters = new() {
+                Renderer.ItemTableFormatters["Index"],
+                Renderer.ItemTableFormatters["Equip"],
+                Renderer.ItemTableFormatters["Name"],
+                Renderer.ItemTableFormatters["Effect"],
+                Renderer.ItemTableFormatters["Desc"],
+            };
+            int nextLine = Renderer.DrawItemList(7, Managers.Game.CurrentCharacter.Inventory.Items, formatters, Managers.Game.CurrentCharacter.Inventory);
 
             Renderer.DrawInputArea();
         }

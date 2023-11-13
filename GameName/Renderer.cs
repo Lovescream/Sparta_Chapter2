@@ -184,39 +184,39 @@ namespace GameName {
             return row;
         }
 
-        public static int DrawInventory(Inventory inventory, int startRow) {
-            // #1. 그리기 준비.
-            List<Item> itemList = inventory.Items;
-            string[] line = new string[7];
-            line[0] = line[line.Length - 1] = "";
-            int row = startRow;
+        //public static int DrawInventory(Inventory inventory, int startRow) {
+        //    // #1. 그리기 준비.
+        //    List<Item> itemList = inventory.Items;
+        //    string[] line = new string[7];
+        //    line[0] = line[line.Length - 1] = "";
+        //    int row = startRow;
 
-            // #2. 상위 행 그리기.
-            line[1] = GetInventoryElementString(2, "", true);
-            line[2] = GetInventoryElementString(3, "", true);
-            line[3] = GetInventoryElementString(10, "이름", true);
-            line[4] = GetInventoryElementString(15, "효과", true);
-            line[5] = GetInventoryElementString(50, "설명", true);
-            Print(row++, String.Join('|', line));
-            line[1] = GetInventoryElementString(2, "=", false);
-            line[2] = GetInventoryElementString(3, "=", false);
-            line[3] = GetInventoryElementString(10, "=", false);
-            line[4] = GetInventoryElementString(15, "=", false);
-            line[5] = GetInventoryElementString(50, "=", false);
-            Print(row++, String.Join('|', line));
+        //    // #2. 상위 행 그리기.
+        //    line[1] = GetInventoryElementString(2, "", true);
+        //    line[2] = GetInventoryElementString(3, "", true);
+        //    line[3] = GetInventoryElementString(10, "이름", true);
+        //    line[4] = GetInventoryElementString(15, "효과", true);
+        //    line[5] = GetInventoryElementString(50, "설명", true);
+        //    Print(row++, String.Join('|', line));
+        //    line[1] = GetInventoryElementString(2, "=", false);
+        //    line[2] = GetInventoryElementString(3, "=", false);
+        //    line[3] = GetInventoryElementString(10, "=", false);
+        //    line[4] = GetInventoryElementString(15, "=", false);
+        //    line[5] = GetInventoryElementString(50, "=", false);
+        //    Print(row++, String.Join('|', line));
 
-            // #3. 본문 행 그리기.
-            for (int i = 0; i < itemList.Count; i++) {
-                Item item = itemList[i];
-                line[1] = GetInventoryElementString(2, (i + 1).ToString(), false);
-                line[2] = GetInventoryElementString(3, inventory.IsEquipped(item) ? "[E]" : "", false);
-                line[3] = GetInventoryElementString(10, item.Data.name, false);
-                line[4] = GetInventoryElementString(15, item.Effect, false);
-                line[5] = GetInventoryElementString(50, item.Data.description, false);
-                Print(row++, String.Join('|', line));
-            }
-            return row;
-        }
+        //    // #3. 본문 행 그리기.
+        //    for (int i = 0; i < itemList.Count; i++) {
+        //        Item item = itemList[i];
+        //        line[1] = GetInventoryElementString(2, (i + 1).ToString(), false);
+        //        line[2] = GetInventoryElementString(3, inventory.IsEquipped(item) ? "[E]" : "", false);
+        //        line[3] = GetInventoryElementString(10, item.Data.name, false);
+        //        line[4] = GetInventoryElementString(15, item.Effect, false);
+        //        line[5] = GetInventoryElementString(50, item.Data.description, false);
+        //        Print(row++, String.Join('|', line));
+        //    }
+        //    return row;
+        //}
 
         public static string GetInventoryElementString(int maxLength, string data, bool isTitle = false) {
             int dataLength = GetPrintingLength(data);
