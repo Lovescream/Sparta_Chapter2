@@ -26,7 +26,7 @@ namespace GameName {
 
             ItemTableFormatters["Index"] = new("Index", "", 2, null);
             ItemTableFormatters["Equip"] = new("Equip", "", 3, null);
-            ItemTableFormatters["Name"] = new("Name", "이름", 10, i => i.Data.name);
+            ItemTableFormatters["Name"] = new("Name", "이름", 20, i => i.Data.name);
             ItemTableFormatters["Effect"] = new("Effect", "효과", 15, i => i.Effect);
             ItemTableFormatters["Desc"] = new("Desc", "설명", 50, i => i.Data.description);
             ItemTableFormatters["Cost"] = new("Cost", "비용", 10, i => i.Data.cost.ToString());

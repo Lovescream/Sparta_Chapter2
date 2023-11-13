@@ -14,6 +14,7 @@ namespace GameName {
             Options.Clear();
             Options.Add(Managers.Scene.GetOption("ShowInfo"));
             Options.Add(Managers.Scene.GetOption("Inventory"));
+            Options.Add(Managers.Scene.GetOption("Shop"));
             DrawScene();
         }
         public override void NextScene() {

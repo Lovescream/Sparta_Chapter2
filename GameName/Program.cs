@@ -12,6 +12,7 @@ namespace GameName {
             Renderer.Initialize();
             Managers.Data.Initialize();
             Managers.Scene.Initialize();
+            Managers.Game.Initialize();
             Initialize();
         }
 

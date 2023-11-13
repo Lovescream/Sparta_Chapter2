@@ -11,7 +11,7 @@ namespace GameName {
 
         public CharacterData Data { get; private set; }
         public string Name => string.IsNullOrEmpty(name) ? Data.name : name;
-        public int Gold { get; private set; }
+        public int Gold { get; set; }
         public float HpMax => Data.hp + hpModifier;
         public float Damage => Data.damage + damageModifier;
         public float Defense => Data.defense + defenseModifier;
