@@ -57,7 +57,7 @@ namespace GameName {
         }
         
         public void Unequip(ItemType type) {
-            if (type != ItemType.Weapon || type != ItemType.Armor) return;
+            if (type != ItemType.Weapon && type != ItemType.Armor) return;
             if (Equipped[type] == null) return;
             Owner.OnUnequip(Equipped[type]);
             Equipped[type] = null;

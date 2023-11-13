@@ -29,8 +29,8 @@ namespace GameName {
             Options.Add("EquipManage", new("EquipManage", "장착관리", () => EnterScene<InventoryEquipScene>()));
             Options.Add("Back", new("Back", "뒤로가기", () => EnterScene<Scene>(PrevScene.GetType().Name)));
             Options.Add("Shop", new("Shop", "상점", () => EnterScene<ShopScene>()));
-            Options.Add("ShopPurchase", new("ShopPurchase", "아이템 구매", null));
-            Options.Add("ShopSell", new("ShopSell", "아이템 판매", null));
+            Options.Add("ShopPurchase", new("ShopPurchase", "아이템 구매", () => (CurrentScene as ShopScene).EnterState(ShopState.Purchase)));
+            Options.Add("ShopSell", new("ShopSell", "아이템 판매", () => (CurrentScene as ShopScene).EnterState(ShopState.Sell)));
         }
 
         public ActionOption GetOption(string key) => Options[key];

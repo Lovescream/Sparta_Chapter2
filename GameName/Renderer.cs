@@ -115,12 +115,12 @@ namespace GameName {
             Console.SetCursorPosition(inputAreaString.Length, height - inputAreaHeight - 1);
         }
 
-        public static void PrintOptions(int line, List<ActionOption> options) {
+        public static void PrintOptions(int line, List<ActionOption> options, bool fromZero = false) {
             for (int i = 0; i < options.Count; i++) {
                 ActionOption option = options[i];
                 Console.SetCursorPosition(printMargin, line);
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.Write(i + 1);
+                Console.Write(fromZero ? i : i + 1);
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.Write(". ");
                 Console.Write(option.Description);
