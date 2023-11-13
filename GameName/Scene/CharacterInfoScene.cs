@@ -5,17 +5,16 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace GameName {
-    public class TownScene : Scene {
-
-        public override string Title { get; protected set; } = "스파르타 마을";
+    public class CharacterInfoScene : Scene {
+        public override string Title { get; protected set; } = "상태 보기";
         public List<ActionOption> Options { get; protected set; } = new();
 
         public override void EnterScene() {
             Options.Clear();
-            Options.Add(Managers.Scene.GetOption("ShowInfo"));
-            Options.Add(Managers.Scene.GetOption("Inventory"));
+            Options.Add(Managers.Scene.GetOption("Back"));
             DrawScene();
         }
+
         public override void NextScene() {
             while (true) {
                 DrawScene();
@@ -28,10 +27,12 @@ namespace GameName {
 
         protected override void DrawScene() {
             Renderer.DrawBorder(Title);
-            Renderer.Print(3, "스파르타 마을에 오신 여러분 환영합니다.");
-            Renderer.Print(4, "이 곳에서 던전으로 들어가기 전 활동을 할 수 있습니다.");
+            Renderer.Print(3, "캐릭터의 정보가 표시됩니다.");
 
-            Renderer.PrintOptions(6, Options);
+            int nextLine = Renderer.PrintCharacterInfo(Managers.Game.CurrentCharacter, 5);
+
+            Renderer.PrintOptions(++nextLine, Options);
+
             Renderer.DrawInputArea();
         }
     }

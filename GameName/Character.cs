@@ -17,6 +17,8 @@ namespace GameName {
         public float Defense => Data.defense + defenseModifier;
         public float Hp => hp;
         public int Level => level;
+
+        public Inventory Inventory { get; private set; }
         #endregion
 
         #region Fields
@@ -36,8 +38,29 @@ namespace GameName {
             this.name = name;
 
             this.hp = HpMax;
+            Inventory = new(this);
         }
 
         public void SetName(string name) => this.name = name;
+
+        public void OnEquip(Item item) {
+            if (item == null) return;
+            if (item.Data.hpModifier != 0)
+                hpModifier += item.Data.hpModifier;
+            if (item.Data.damageModifier != 0)
+                damageModifier += item.Data.damageModifier;
+            if (item.Data.defenseModifier != 0)
+                defenseModifier += item.Data.defenseModifier;
+        }
+
+        public void OnUnequip(Item item) {
+            if (item == null) return;
+            if (item.Data.hpModifier != 0)
+                hpModifier -= item.Data.hpModifier;
+            if (item.Data.damageModifier != 0)
+                damageModifier -= item.Data.damageModifier;
+            if (item.Data.defenseModifier != 0)
+                defenseModifier -= item.Data.defenseModifier;
+        }
     }
 }

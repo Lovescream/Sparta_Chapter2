@@ -10,10 +10,12 @@ namespace GameName {
 
     public class DataManager {
         public Dictionary<string, CharacterData> Characters = new();
+        public Dictionary<string, ItemData> Items = new();
         public Dictionary<string, Table> Tables = new();
 
         public void Initialize() {
             Characters = LoadJson<CharacterDataLoader, string, CharacterData>("CharacterData").MakeDictionary();
+            Items = LoadJson<ItemDataLoader, string, ItemData>("ItemData").MakeDictionary();
 
             Table characterTable = new();
             characterTable.AddType("index", 7, false);

@@ -15,6 +15,8 @@ namespace GameName {
         public void SelectCharacter(CharacterData data) {
             if (data == null) return;
             CurrentCharacter = new(data);
+            CurrentCharacter.Inventory.Add(new Item(Managers.Data.Items["낡은 검"]));
+            CurrentCharacter.Inventory.Add(new Item(Managers.Data.Items["낡은 검"]));
         }
     }
 }
