@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata;
 using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
@@ -276,7 +277,28 @@ namespace GameName {
 
         #endregion
 
-        
+        #region Dungeon
+
+        public static int PrintDungeonList(int startRow, List<Dungeon> dungeons) {
+            int row = startRow;
+            for (int i = 0; i < dungeons.Count; i++) {
+                Console.SetCursorPosition(printMargin, row);
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.Write((i + 1).ToString());
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.Write($". {dungeons[i].Name}");
+                Console.SetCursorPosition(printMargin + 20, row++);
+                Console.Write($"| 방어력 ");
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.Write(dungeons[i].RequiredDefense.ToString());
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.Write(" 이상 권장");
+            }
+            return row;
+        }
+
+        #endregion
+
 
         #region Support
 

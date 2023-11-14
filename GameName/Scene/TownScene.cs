@@ -15,6 +15,8 @@ namespace GameName {
             Options.Add(Managers.Scene.GetOption("ShowInfo"));
             Options.Add(Managers.Scene.GetOption("Inventory"));
             Options.Add(Managers.Scene.GetOption("Shop"));
+            Options.Add(Managers.Scene.GetOption("EnterDungeon"));
+            Options.Add(Managers.Scene.GetOption("Rest"));
             DrawScene();
         }
         public override void NextScene() {

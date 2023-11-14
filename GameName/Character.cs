@@ -15,9 +15,16 @@ namespace GameName {
         public float HpMax => Data.hp + hpModifier;
         public float Damage => Data.damage + damageModifier;
         public float Defense => Data.defense + defenseModifier;
-        public float Hp => hp;
+        public float Hp {
+            get => hp;
+            set {
+                if (value >= HpMax) hp = HpMax;
+                else if (value <= 0) hp = 0;
+                else hp = value;
+            }
+        }
         public int Level => level;
-
+        
         public Inventory Inventory { get; private set; }
         #endregion
 
